@@ -1,0 +1,387 @@
+/* Стили обнуления */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+
+body {
+	line-height: 1;
+	color: #000;
+
+}
+/* ------------------ */
+
+
+	/*
+	padding-top: 20px;
+	padding-right: 10px;
+	padding-bottom: 30px;
+	padding-left: 50px;
+	*/
+	/* padding: 20px 10px 30px 50px;*/
+
+	/* Для всех сторон 30 */
+	/* padding:  30px; */
+
+	/* Сверху\снизу 50. слева\справа 30 */
+	/* padding: 50px 30px; */
+
+	/* Сверху 50, слева\справа 30, снизу 10 */
+	/* padding: 50px 30px 10px; */
+
+	/*
+	margin-top: 20px;
+	margin-right: 10px;
+	margin-bottom: 30px;
+	margin-left: 50px;
+	*/
+	/* margin: 20px 10px 30px 50px;*/
+
+	/* Для всех сторон 30 */
+	/* margin: 30px; */
+
+	/* Сверху\снизу 50. слева\справа 30 */
+	/* margin: 50px 30px; */
+
+	/* Сверху 50, слева\справа 30, снизу 10 */
+	/* margin: 50px 30px 10px; */
+
+	/* Больше можна, меньше нет */
+	/*
+	min-width: 500px;
+	min-height: 100px;
+	*/
+	/* Меньше можна, больше нет */
+	/*
+	max-width: 500px;
+	max-height: 100px;
+	*/
+
+
+/* .block__inner {
+	margin: 0px 0px -30px 0px;
+}
+.title {
+	font-weight: 700;
+	font-size: 30px;
+	margin: 0px 0px 20px 0px;
+}
+.text {
+	line-height: 130%;
+	margin: 0px 0px 30px 0px;
+}
+.link {
+	color: yellow;
+	display: inline-block;
+	margin: 0px 0px 30px 0px;
+}
+
+.inline {
+	background-color: olive;
+}
+/* К картинке применяется как к блочному тегу  */
+/* .image {
+	/* Хорошая практика */
+	/* max-width: 100%;
+}  */
+
+/*
+box-sizing
+Применяется для изменения алгоритма расчета ширины и высоты элемента. 
+Свойство наследуется.
+content-box - Основывается на стандартах CSS, при этом свойства width и height задают ширину и высоту контента и не включают в себя значения отступов, полей и границ.
+border-box - Свойства width и height включают в себя значения полей и границ, но не отступов (margin). Эта модель используется браузером Internet Exporer в режиме несовместимости.
+padding-box - Свойства width и height включают в себя значения полей, но не отступов (margin) и границ (border). 
+*/
+
+/*
+width
+Устанавливает ширину блочных тегов и некоторыйх строчных (например img)
+Свойство не наследуется.
+width:100px;
+width:10%;
+*/
+
+/*
+height:
+Устанавливает высоту блочных тегов и некоторыйх строчных (например img)
+Свойство не наследуется.
+height:100px;
+height:10%;
+*/
+
+/*
+max-width
+Устанавливает максимальную ширину блочных тегов 
+и некоторыйх строчных (например img)
+
+min-width
+Устанавливает минимальную ширину 
+блочных тегов и некоторыйх строчных (например img)
+
+max-height
+Свойство не наследуется.
+
+min-height
+Свойство не наследуется.
+
+overflow 
+Управляет отображением содержания блочного элемента
+visible - Отображается все содержание элемента, даже за пределами установленной высоты и ширины. 
+hidden - Отображается только область внутри элемента, остальное будет скрыто.
+scroll - Всегда добавляются полосы прокрутки.
+auto - Полосы прокрутки добавляются только при необходимости.
+
+display:
+Многоцелевое свойство, которое определяет, как элемент должен быть показан в документе.
+Свойство не наследуется.
+
+block - Элемент показывается как блочный. Применение этого значения для встроенных элементов, например тега <span>, заставляет его вести подобно блокам — происходит перенос строк в начале и в конце содержимого. 											
+inline - Элемент отображается как встроенный. Использование блочных тегов, таких как <div> и <p>, автоматически создает перенос и показывает содержимое этих тегов с новой строки. Значение inline отменяет эту особенность, поэтому содержимое блочных элементов начинается с того места, где окончился предыдущий элемент. 											
+inline - block - Это значение генерирует блочный элемент, который обтекается другими элементами веб-страницы подобно встроенному элементу. Фактически такой элемент по своему действию похож на встраиваемые элементы (вроде тега <img>). При этом его внутренняя часть форматируется как блочный элемент, а сам элемент — как встроенный. 											
+none - Временно удаляет элемент из документа. Занимаемое им место не резервируется и веб-страница формируется так, словно элемента и не было. 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+body {
+	font-family: 'Poiret One', cursive;
+}
+.header {
+	height: 60px;
+	padding: 10px 0px 0px 0px;
+	/* background-color: rgb(228, 57, 57); */
+	overflow: auto;
+	/* margin-bottom: -60px; */
+	background-image: url('../img/header.png');
+	background-position: 0 0;
+background-repeat: no-repeat;
+background-size: 100% auto;
+	
+} 
+.logo {
+	height: 40px;
+	margin-left: 40px;
+	/* margin-right: -10%; */
+}
+ul>li {
+	display: inline-block;
+	/* margin: 15px 20px 0px 0px; */
+	/* margin-top: 15px; */
+	margin-right: 10%;
+}
+.nav>ul {
+	display: inline-block;
+	min-width: 100%;
+	/* margin-left: 25%; */
+}
+nav {
+	display: inline-block;
+	min-width: 300px;
+	/* min-width: 70%; */
+	float: right;
+}
+.box {
+	width: 100%;
+	height: 500px;
+	background-color: rgba(0, 128, 0, 0.226);
+}
+h1 {
+	font-family: 'Bad Script', cursive;
+	font-size: 60px;
+	font-style: italic;
+	margin-top: 25px;
+	text-align: center;
+
+}
+h2,h3 {
+	font-family: 'Bad Script', cursive;
+	font-size: 25px;
+	font-style: italic;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+p {
+	text-align: center;
+	/* margin-top: 25px; */
+	margin-top: 25px;
+}
+
+.box1 p{
+	font-size: 20px;
+	text-shadow: 1px 1px 3px #000;
+}
+.box1 {
+	background-image: url('../img/beckground/1_1.jpg');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	width: 60%;
+	height: 500px;
+	overflow: auto;
+	/* margin-top: -10px; */
+	/* padding: 80px 30px; */
+	color: rgb(248, 52, 52);
+	display: inline-block;
+	/* margin-right: -4px; */
+	box-shadow: rgba(255, 255, 255, 0.87);
+	padding: 15px;
+}
+
+.box2 {
+	/* padding: 25px; */
+	background-image: url('../img/beckground/1_2.png');
+	background-color: rgba(2, 255, 200, 0.664);
+	display: inline-block;
+	width: 40%;
+	height: 100%;
+	/* align-self: flex-start; */
+	float: right;
+	/* margin-top: -75px; */
+	text-align: center;
+	padding: 20px;
+	overflow: auto;
+}
+.box2 p{
+	color: rgb(225, 0, 255);
+	text-shadow: 1px 2px 5px #000;
+}
+.box2 img{
+	width: 100%;
+	border-radius: 10px;
+}
+
+
+.content {
+	background-color: rgb(44, 209, 22);
+	width: 100%;
+	height: 600px;
+}
+.content__1 {
+	background-color: rgb(138, 73, 73);
+	width: 30%;
+	height: 600px;
+	display: inline-block;
+	background-image: url('../img/2_1.jpg');
+	background-position: 50% 50%;
+background-repeat: no-repeat;
+background-size: auto 100%;
+text-align: center;
+padding: 25px 15px;
+	/* margin-left: -4px; */
+	overflow: auto;
+	text-shadow: 0px 0px 10px rgb(0, 39, 148);
+}
+.content__2 {
+	display: inline-block;
+	float: right;
+	background-color: #fff;
+	width: 70%;
+	height: 600px;
+
+}
+.content__2__1 {
+	display: inline-block;
+	width: 100%;
+	height: 360px;
+	background-color: rgb(203, 219, 212);
+	overflow: auto;
+}
+.content__2__1 h2{
+	text-align: right;
+	display: inline-block;
+
+}
+.content__2__1 img{
+	width: 50%;
+	margin-top: 2%;
+	margin-left: 2%;
+	border-radius: 10px;
+}
+.content__2__1 p{
+	display: inline-block;
+	float: right;
+}
+
+
+.content__2__2 {
+ background-image: url('../img/2_2_2.jpg');
+ background-position: 0 0;
+background-repeat: no-repeat;
+background-size: contain;
+ display: inline-block;
+	width: 100%;
+	height: 240px;
+	text-align: center;
+	overflow: auto;
+	text-shadow: 0px 0px 5px rgb(0, 255, 76);
+}
+.content__2__2 p{
+	text-align: right;
+	width: 40%;
+	margin-left: 50%;
+}
+
+.footer {
+	height: 100px;
+	background-color: rgb(22, 0, 75);
+	padding: 15px 25px;
+}
+.footer1 {
+	display: inline-block;
+	background-color: rgba(183, 243, 233, 0.2);
+	width: 30%;
+	height: 100%;
+	margin-right: 1%;
+	border-radius: 10px;
+	border: 2px solid #fff ;
+	text-align: center;
+}
+.footer1 img{
+	margin-top: 5%;
+	height: 60%;
+	font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+}
+.footer1 p{
+	width: 40%;
+	margin: 0;
+	float: right;
+	margin-top: 20px;
+}
+.footer2 {
+	display: inline-block;
+	background-color: rgba(255, 255, 255, 0.2);
+	width: 69%;
+	height: 100%;
+	float: right;
+	border-radius: 10px;
+	border: 2px solid #fff ;
+	text-align: center;
+}
+.footer2 p{
+margin-top: 30px;
+}
